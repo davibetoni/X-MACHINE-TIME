@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  machine_id: 1
+  video_sequence: 1
+  file_compression: MyString
+  file_type: MyString
+  file_name: MyString
+  video_length: 1
+  status: MyString
+  event_name: MyString
+  event_date: MyString
+  contact_name: MyString
+  event: one
+  filee: one
+  maachine: one
+
+two:
+  machine_id: 1
+  video_sequence: 1
+  file_compression: MyString
+  file_type: MyString
+  file_name: MyString
+  video_length: 1
+  status: MyString
+  event_name: MyString
+  event_date: MyString
+  contact_name: MyString
+  event: two
+  filee: two
+  maachine: two
