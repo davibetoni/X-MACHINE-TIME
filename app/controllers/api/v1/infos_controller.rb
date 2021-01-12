@@ -1,3 +1,5 @@
+require 'net/http'
+
 class Api::V1::InfosController < ApplicationController
   before_action :set_info, only: %i[show update destroy]
 
@@ -22,6 +24,12 @@ class Api::V1::InfosController < ApplicationController
         maachine: { only: [:maachine_id] }
       }
     )
+
+url = URI.parse('https://capsuladotempo.com/')
+req = Net::HTTP::Get.new(url.to_s)
+res = Net::HTTP.start(url.host, url.port) {|http|
+  http.request(req)
+}
   end
 
   def create
